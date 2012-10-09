@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-ExtendedRangeDepthData",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Infrared", "03-Infrared\03-Infrared.csproj", "{F71658A9-4E09-48C7-91D0-BA6157257AA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-RawBayer", "04-RawBayer\04-RawBayer.csproj", "{E55BCA56-6FF2-436C-9B41-C12A6103DCE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55BCA56-6FF2-436C-9B41-C12A6103DCE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55BCA56-6FF2-436C-9B41-C12A6103DCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55BCA56-6FF2-436C-9B41-C12A6103DCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55BCA56-6FF2-436C-9B41-C12A6103DCE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
