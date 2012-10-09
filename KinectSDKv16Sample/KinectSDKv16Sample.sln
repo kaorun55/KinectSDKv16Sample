@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Accelerometer", "01-Acce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-ExtendedRangeDepthData", "02-ExtendedRangeDepthData\02-ExtendedRangeDepthData.csproj", "{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Infrared", "03-Infrared\03-Infrared.csproj", "{F71658A9-4E09-48C7-91D0-BA6157257AA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71658A9-4E09-48C7-91D0-BA6157257AA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
