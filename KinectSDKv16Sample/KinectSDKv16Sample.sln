@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Accelerometer", "01-Accelerometer\01-Accelerometer.csproj", "{2E52B139-3FD5-4373-B036-99A07D656A04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-ExtendedRangeDepthData", "02-ExtendedRangeDepthData\02-ExtendedRangeDepthData.csproj", "{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2E52B139-3FD5-4373-B036-99A07D656A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E52B139-3FD5-4373-B036-99A07D656A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E52B139-3FD5-4373-B036-99A07D656A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABCC623-9F53-49B4-91E7-4CCA3A5D65F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
