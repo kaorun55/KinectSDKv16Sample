@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-ColorCameraSettings", "0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-AccelerometerCpp", "01-AccelerometerCpp\01-AccelerometerCpp.vcxproj", "{356C0759-5097-4191-856F-1B7BD71511F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-ExtendedRangeDepthDataCpp", "02-ExtendedRangeDepthDataCpp\02-ExtendedRangeDepthDataCpp.vcxproj", "{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,16 @@ Global
 		{356C0759-5097-4191-856F-1B7BD71511F7}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{356C0759-5097-4191-856F-1B7BD71511F7}.Release|Win32.ActiveCfg = Release|Win32
 		{356C0759-5097-4191-856F-1B7BD71511F7}.Release|Win32.Build.0 = Release|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Debug|Win32.Build.0 = Debug|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Release|Win32.ActiveCfg = Release|Win32
+		{D1ACA878-A53D-4CA8-AE5F-5D57F605E04B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
