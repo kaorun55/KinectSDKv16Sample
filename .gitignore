@@ -4,6 +4,8 @@
 # OpenNI
 *.oni
 
+# ReVIEW
+*.html
 
 .DS_Store?
 .DS_Store
