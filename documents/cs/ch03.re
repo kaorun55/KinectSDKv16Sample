@@ -84,7 +84,7 @@ int GetAccelerometerAngle()
 </Window>
 //}
 
-//list[accelerometer3][MainWindow.xaml.cs]{
+//list[accelerometer4][MainWindow.xaml.cs]{
 using System;
 using System.Linq;
 using System.Windows;
