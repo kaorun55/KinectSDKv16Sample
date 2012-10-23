@@ -1,54 +1,42 @@
-= v1.6 の変更点
-Kinect for Windows SDKの開発環境を構築します。
+= Kinect for Windows SDK v1.6 の変更点
+Kinect for Windows SDK v1.6 の変更点は以下の通りです。
 
-== 必要なソフトウェア
- * Windows 7または Windows 8(Kienct for Windows SDK v1.6以降)
- * Visual C# 2010 Express または その他の Visual Studio 製品
- * Visual Studio 2012 Express for Desktop または その他の Visual Studio 製品
- ** @<tt>{http://www.microsoft.com/visualstudio/jpn/downloads}
- * Kinect for Windows SDK v1.5 および Kinect for Windows Developer Toolkit v1.5.x
- * Kinect for Windows SDK v1.6 および Kinect for Windows Developer Toolkit v1.6
- ** @<tt>{http://www.microsoft.com/en-us/kinectforwindows/}
- * Kinect for Windows または Kinect for Xbox(開発用のみ)
-
-== セットアップ
-1. Kinect for Windows のサイト( @<tt>{http://www.microsoft.com/en-us/kinectforwindows/} )からSDKをダウンロードします。
-//image[kinectsdk_1][SDKのダウンロードサイト]
-//image[kinectsdk_2][SDKのダウンロードサイト]
-
-2. Kinect for Windows SDK ( KinectSDK-v1.6-Setup.exe ) をインストールします。
-//image[kinectsdk_3][SDKのダウンロードサイト]
-//image[kinectsdk_5][SDKのダウンロードサイト]
-
-3. Kinect for Windows Developer Toolkit ( KinectDeveloperToolkit-v1.6.0-Setup.exe ) をインストールします。
-//image[kinectsdk_6][SDKのダウンロードサイト]
-//image[kinectsdk_8][SDKのダウンロードサイト]
-
-
-== 開発環境の設定
-=== Visual C# 2010 Express
-1. Visual C# 2010 Express を起動し、新しいプロジェクトを選択します。
-//image[vs2010_1][SDKのダウンロードサイト]
-
-2. WPFアプリケーションを選択し、プロジェクト名を入力します。
-//image[vs2010_2][SDKのダウンロードサイト]
-
-3. プロジェクトにある「参照設定」を右クリックし「参照の追加」を選択します。
-//image[vs2010_3][SDKのダウンロードサイト]
-
-4. 「.NET」タブから「Microsoft.Kienct」を選択します。
-//image[vs2010_4][SDKのダウンロードサイト]
-
-
-=== Visual Studio 2012 Express for Windows Desktop
-1. Visual Studio 2012 Express for Windows Desktop を起動し、新しいプロジェクトを選択します。
-//image[vs2012_1][SDKのダウンロードサイト]
-
-2. WPFアプリケーションを選択し、プロジェクト名を入力します。
-//image[vs2012_2][SDKのダウンロードサイト]
-
-3. プロジェクトにある「参照設定」を右クリックし「参照の追加」を選択します。
-//image[vs2012_3][SDKのダウンロードサイト]
-
-4. 「アセンブリ」タブを選択し、検索ボックスに「Kienct」と入力します。 表示された「Microsoft.Kienct」にチェックを入れ「OK」を押します。
-//image[vs2012_4][SDKのダウンロードサイト]
+* 環境
+** Windows  8 および Visual Studio 2012、Microsoft .NET Framework 4.5に正式に対応
+** VMのサポート
+*** Microsoft Hyper-V, VMWare, Parallels
+* SDK
+** 3軸加速度センサーの値を取得できる
+** 4mを超えた距離データの取得ができる(ただし、4m以上の精度は低くなる)
+** カラーカメラのホワイトバランスや露出をアプリケーションから設定できる
+** カラーカメラの生データを取得することができる
+** 赤外線
+*** 赤外線画像を取得できる
+**** カラーカメラのキャリブレーションしたい場合
+**** 暗所でグレースケール画像を取得した場合
+*** 赤外線のON/OFFを制御可能になった
+**** 複数のセンサーで重複した場所を映すことができる
+** 一つのアプリケーションで複数台のKinectを接続した際の、スケルトンが一台しか利用できない制限が解除されている
+*** 一台当たりの認識人数(2人)は変わりないようなので、2人×4台で8人までは1アプリケーションで認識できるはず
+* Developer Toolkit
+** 「Human Interface Guidelines」に沿ったサンプルが追加(Basic User Interactions – WPF)
+** C#のWPFと、C++のDirect3Dを組み合わせたサンプルが追加
+* 追加されたクラスなど(C#)
+** クラス
+*** ColorCameraSettings
+*** CoordinateMapper
+** 構造体
+*** DepthImagePixel
+** 列挙体
+*** BacklightCompensationMode
+*** PowerLineFrequency
+** メソッド、プロパティ
+*** KinectSensor
+**** AccelerometerGetCurrentReading()
+**** IsKnownPoint()
+**** CoordinateMapper
+**** ForceInfraredEmitterOff
+*** ColorImageStream
+**** CameraSettings
+*** DepthImageFrame
+**** CopyDepthImagePixelDataTo()
