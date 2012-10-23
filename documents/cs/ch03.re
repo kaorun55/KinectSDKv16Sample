@@ -31,46 +31,56 @@ int GetAccelerometerAngle()
 == 全体のコード
 //list[accelerometer3][MainWindow.xaml]{
 <Window x:Class="_01_Accelerometer.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Viewbox>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="180" />
-                <ColumnDefinition Width="100" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="10" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525">
+  <Viewbox>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="180" />
+        <ColumnDefinition Width="100" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="10" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
 
-            <TextBlock Text="X：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="0" />
-            <TextBlock Name="textAccelerometerX" Grid.Column="1" Grid.Row="0" />
+      <TextBlock Text="X：" HorizontalAlignment="Right" 
+            Grid.Column="0" Grid.Row="0" />
+      <TextBlock Name="textAccelerometerX" Grid.Column="1" 
+            Grid.Row="0" />
 
-            <TextBlock Text="Y：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="1"/>
-            <TextBlock Name="textAccelerometerY"  Grid.Column="1" Grid.Row="1" />
+      <TextBlock Text="Y：" HorizontalAlignment="Right" 
+            Grid.Column="0" Grid.Row="1"/>
+      <TextBlock Name="textAccelerometerY"  Grid.Column="1" 
+            Grid.Row="1" />
 
-            <TextBlock Text="Z：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2"/>
-            <TextBlock Name="textAccelerometerZ"  Grid.Column="1" Grid.Row="2"  />
+      <TextBlock Text="Z：" HorizontalAlignment="Right"
+            Grid.Column="0" Grid.Row="2"/>
+      <TextBlock Name="textAccelerometerZ"  Grid.Column="1"
+            Grid.Row="2"  />
 
-            <TextBlock Text="加速度センサーから取得した角度：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="3"/>
-            <TextBlock Name="textAngle"  Grid.Column="1" Grid.Row="3"  />
+      <TextBlock Text="加速度センサーから取得した角度："
+            HorizontalAlignment="Right" Grid.Column="0" Grid.Row="3"/>
+      <TextBlock Name="textAngle"  Grid.Column="1" Grid.Row="3"  />
 
-            <TextBlock Text="チルト角度(現在の値)：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="4"/>
-            <TextBlock Name="textTiltAngle"  Grid.Column="1" Grid.Row="4" />
+      <TextBlock Text="チルト角度(現在の値)：" HorizontalAlignment="Right" 
+            Grid.Column="0" Grid.Row="4"/>
+      <TextBlock Name="textTiltAngle"  Grid.Column="1" Grid.Row="4" />
 
-            <TextBlock Text="チルト角度(変更する値)：" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="5"/>
-            <TextBox Name="textBaseAngle"  Grid.Column="1" Grid.Row="5" />
-            <Button Name="buttonBaseUpdate" Content="更新" Click="buttonBaseUpdate_Click_1"  Grid.Column="2" Grid.Row="5" />
-        </Grid>
-    </Viewbox>
+      <TextBlock Text="チルト角度(変更する値)：" HorizontalAlignment="Right" 
+            Grid.Column="0" Grid.Row="5"/>
+      <TextBox Name="textBaseAngle"  Grid.Column="1" Grid.Row="5" />
+      <Button Name="buttonBaseUpdate" Content="更新" 
+            Click="buttonBaseUpdate_Click_1"  Grid.Column="2" Grid.Row="5" />
+    </Grid>
+  </Viewbox>
 </Window>
 //}
 
