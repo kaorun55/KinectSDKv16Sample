@@ -6,30 +6,30 @@
 
 void main()
 {
-	try {
-		int count = 0;
-		::NuiGetSensorCount( &count );
-		if ( count == 0 ) {
-			throw std::runtime_error( "利用可能なKinectがありません" );
-		}
+    try {
+        int count = 0;
+        ::NuiGetSensorCount( &count );
+        if ( count == 0 ) {
+            throw std::runtime_error( "利用可能なKinectがありません" );
+        }
 
-		INuiSensor* kinect;
-		::NuiCreateSensorByIndex( 0, & kinect );
+        INuiSensor* kinect;
+        ::NuiCreateSensorByIndex( 0, &kinect );
 
-		while ( true ) {
-			Vector4 accelerometer = { 0 };
-			kinect->NuiAccelerometerGetCurrentReading( &accelerometer );
+        while ( true ) {
+            Vector4 accelerometer = { 0 };
+            kinect->NuiAccelerometerGetCurrentReading( &accelerometer );
 
-			std::cout << '\r' << accelerometer.x << ", "
-				              << accelerometer.y << ", "
-							  << accelerometer.z;
+            std::cout << '\r' << accelerometer.x << ", "
+                << accelerometer.y << ", "
+                << accelerometer.z;
 
-			if ( ::_kbhit() ) {
-				break;
-			}
-		}
-	}
-	catch ( std::exception& ex ) {
-		std::cout << ex.what() << std::endl;
-	}
+            if ( ::_kbhit() ) {
+                break;
+            }
+        }
+    }
+    catch ( std::exception& ex ) {
+        std::cout << ex.what() << std::endl;
+    }
 }
