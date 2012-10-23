@@ -48,6 +48,7 @@ void kinect_DepthFrameReady( object sender, DepthImageFrameReadyEventArgs e )
             PixelFormats.Gray16, null, pixel, frame.Width * frame.BytesPerPixel );
     }
 }
+//}
 
 == 全体のコード
 //list[depth2][MainWindow.xaml]{
@@ -63,7 +64,8 @@ void kinect_DepthFrameReady( object sender, DepthImageFrameReadyEventArgs e )
                 HorizontalAlignment="Center" VerticalAlignment="Center" 
                 Margin="220,0,0,0" Width="200" />
     </Grid>
-</Window>//}
+</Window>
+//}
 
 //list[depth3][MainWindow.xaml.cs]{
 using System;
