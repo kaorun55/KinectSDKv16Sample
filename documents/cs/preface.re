@@ -4,7 +4,9 @@
 
 == 内容について
 
-本書ではKinect for Windows SDK v1.6をC#から見た内容を記述しています。基本的には http://www.naturalsoftware.jp/ の内容をまとめたものになります。
+本書ではKinect for Windows SDK v1.6をC#から見た内容を記述しています。基本的には @<href>{http://www.naturalsoftware.jp/} の内容をまとめたものになります。
+
+Kinect for Windows SDK の基本的な内容及び v1.0 については、@<href>{http://www.amazon.co.jp/exec/obidos/ASIN/479803326X/kaorun55-22/,KINECT for Windows SDKプログラミングC#編}を参照してください。本内容は、この本の内容を前提としています。
 
 == 動作環境について
 

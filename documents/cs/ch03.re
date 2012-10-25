@@ -14,7 +14,7 @@ textAccelerometerZ.Text = accelerometer.Z.ToString();
 //}
 
 
-この加速度センサーの値から現在のKinectの角度を取得してみましょう。加速度センサーの扱いは、Windows Phoneと同じようにできるので、こちらのサイト( http://thinkit.co.jp/story/2011/11/11/2329?page=0,2 )を参考に角度を求めてみました。座標系が異なるため軸と値を少しいじっています。
+この加速度センサーの値から現在のKinectの角度を取得してみましょう。加速度センサーの扱いは、Windows Phoneと同じようにできるので、こちらのサイト( @<href>{http://thinkit.co.jp/story/2011/11/11/2329?page=0,2} )を参考に角度を求めてみました。座標系が異なるため軸と値を少しいじっています。
 
 //list[accelerometer2][加速度センサーの値を角度に変換する]{
 int GetAccelerometerAngle()

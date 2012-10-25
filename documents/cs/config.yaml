@@ -9,11 +9,11 @@ bookname: k4w_v16_cs
 
 # 書名
 booktitle: |
-  Kinect for Windows SDK v1.6 概要 CS
+  Kinect for Windows SDK v1.6 概要 C#編
 
 # 著者
 aut: 中村 薫
-date: 2012-10-23
+date: 2012-10-25
 rights: |
   (C) 2012 Kaoru NAKAMURA
 
@@ -65,7 +65,7 @@ htmlversion: 4
 colophon: true
 #texstyle: samplemacro
 pubhistory: |
-  2012年10月23日 v1.0版発行
+  2012年10月25日 v1.0版発行
 
 # XHTML生成後に実行するプログラム。$1:HTMLの生成されたディレクトリ $2:ReVIEWファイルのあるディレクトリ $3:起動時指定のyamlファイル名
 # posthook: hook.sh

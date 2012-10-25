@@ -5,13 +5,13 @@ Kinect for Windows SDKの開発環境を構築します。
  * Windows 7または Windows 8(Kienct for Windows SDK v1.6以降)
  * Visual C# 2010 Express または その他の Visual Studio 製品
  * Visual Studio 2012 Express for Desktop または その他の Visual Studio 製品
- ** @<tt>{http://www.microsoft.com/visualstudio/jpn/downloads}
+ ** @<href>{http://www.microsoft.com/visualstudio/jpn/downloads}
  * Kinect for Windows SDK v1.6 および Kinect for Windows Developer Toolkit v1.6
- ** @<tt>{http://www.microsoft.com/en-us/kinectforwindows/}
+ ** @<href>{http://www.microsoft.com/en-us/kinectforwindows/}
  * Kinect for Windows または Kinect for Xbox(開発用のみ)
 
 == セットアップ
-1. Kinect for Windows のサイト( @<tt>{http://www.microsoft.com/en-us/kinectforwindows/} )からSDKをダウンロードします。
+1. Kinect for Windows のサイト( @<href>{http://www.microsoft.com/en-us/kinectforwindows/} )からSDKをダウンロードします。
 //image[kinectsdk_1][SDKのダウンロードサイト]
 //image[kinectsdk_2][SDKのダウンロードサイト]
 
