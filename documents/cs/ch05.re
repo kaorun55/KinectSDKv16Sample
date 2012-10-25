@@ -179,4 +179,5 @@ namespace _03_Infrared
             kinect.ForceInfraredEmitterOff = !(bool)checkInfrared.IsChecked;
         }
     }
-}//}
+}
+//}
