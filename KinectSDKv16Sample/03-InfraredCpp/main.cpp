@@ -18,7 +18,8 @@ void main()
         INuiSensor* kinect;
         ::NuiCreateSensorByIndex( 0, & kinect );
 
-        kinect->NuiInitialize( NUI_INITIALIZE_FLAG_USES_COLOR );
+        kinect->NuiInitialize( NUI_INITIALIZE_FLAG_USES_COLOR |
+                               NUI_INITIALIZE_FLAG_USES_DEPTH );
 
         HANDLE imageHandle;
         kinect->NuiImageStreamOpen( NUI_IMAGE_TYPE_COLOR_INFRARED,
@@ -45,6 +46,11 @@ void main()
             int key = cv::waitKey( 10 );
             if ( key == 'q' ) {
                 break;
+            }
+            // 赤外線エミッタのON/OFFを切り替える
+            else if ( key == 'i' ) {
+                BOOL emitter = kinect->NuiGetForceInfraredEmitterOff();
+                kinect->NuiSetForceInfraredEmitterOff( !emitter );
             }
         }
     }
